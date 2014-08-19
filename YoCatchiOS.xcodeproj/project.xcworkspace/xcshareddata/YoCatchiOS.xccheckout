@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C0098015-66EA-438B-B30D-AA22FA01E081</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YoCatchiOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>90606CE3-06D2-46BA-B58E-515F9F0C8A6B</key>
+		<string>https://github.com/KurtRobo/YoCatchiOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>YoCatchiOS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>90606CE3-06D2-46BA-B58E-515F9F0C8A6B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/KurtRobo/YoCatchiOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>90606CE3-06D2-46BA-B58E-515F9F0C8A6B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>90606CE3-06D2-46BA-B58E-515F9F0C8A6B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YoCatchiOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

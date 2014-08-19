@@ -33,6 +33,8 @@
     self.view = [[UIView alloc] initWithFrame:CGRectZero];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    //Configurations for the four different elements
+    
     yoField = [[UITextField alloc] initWithFrame:CGRectMake(10, 40, 300, 40)];
     [yoField setBackgroundColor:[UIColor clearColor]];
     [yoField setPlaceholder:@"Yo"];
@@ -47,8 +49,8 @@
     
     myLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 130, 320, 375)];
     [myLabel setBackgroundColor:[UIColor clearColor]];
-    [myLabel setText:@"Hi Label"];
-    //[myLabel setFont:<#(UIFont *)#>]
+    [myLabel setTextAlignment:NSTextAlignmentCenter];
+    [myLabel setFont:[UIFont fontWithName:@"ChalkboardSE-Regular" size:60]];
     [myLabel setNumberOfLines:2];
     [[self view] addSubview:myLabel];
     

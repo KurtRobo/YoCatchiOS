@@ -19,13 +19,45 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.yoField.delegate = self;
-    self.catchField.delegate = self;
+    yoField.delegate = self;
+    catchField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)loadView {
+
+    self.view = [[UIView alloc] initWithFrame:CGRectZero];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    yoField = [[UITextField alloc] initWithFrame:CGRectMake(10, 40, 300, 40)];
+    [yoField setBackgroundColor:[UIColor clearColor]];
+    [yoField setPlaceholder:@"Yo"];
+    [[self view] addSubview:yoField];
+    [yoField setBorderStyle:UITextBorderStyleRoundedRect];
+    
+    catchField = [[UITextField alloc] initWithFrame:CGRectMake(10, 90, 300, 40)];
+    [catchField setBackgroundColor:[UIColor clearColor]];
+    [catchField setPlaceholder:@"Catch!"];
+    [[self view] addSubview:catchField];
+    [catchField setBorderStyle:UITextBorderStyleRoundedRect];
+    
+    myLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 130, 320, 375)];
+    [myLabel setBackgroundColor:[UIColor clearColor]];
+    [myLabel setText:@"Hi Label"];
+    //[myLabel setFont:<#(UIFont *)#>]
+    [myLabel setNumberOfLines:2];
+    [[self view] addSubview:myLabel];
+    
+    showMessageButton = [[UIButton alloc] initWithFrame:CGRectMake(95, 515, 140, 40)];
+    [showMessageButton addTarget:self action:@selector(showMessageButton:) forControlEvents:UIControlEventTouchUpInside];
+    [showMessageButton setTitle:@"Show Message" forState:UIControlStateNormal];
+    [showMessageButton setBackgroundColor:[UIColor clearColor]];
+    [showMessageButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [[self view] addSubview:showMessageButton];
 }
 
 //Calls function when show message button pressed
@@ -61,8 +93,8 @@
     [UIView animateWithDuration:0.5 animations:^{
         self.view.backgroundColor = backgroundColour;
     }];
-    self.myLabel.textColor = textColor;
-    self.myLabel.text = [NSString stringWithFormat: @"%@\n%@", [self.yoField text], [self.catchField text]];
+    myLabel.textColor = textColor;
+    myLabel.text = [NSString stringWithFormat: @"%@\n%@", [yoField text], [catchField text]];
 }
 
 @end

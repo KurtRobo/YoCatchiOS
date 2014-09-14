@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-//#import "YoCatchModel.h"
 
 @interface ViewController ()
 
@@ -23,19 +22,7 @@
     self.yoField.delegate = self;
     self.catchField.delegate = self;
     
-    NSURL *normalSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/yoSound1.mp3", [[NSBundle mainBundle] resourcePath]]];
-    NSURL *softSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/yoSound2.mp3", [[NSBundle mainBundle] resourcePath]]];
-    NSURL *loudSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/yoSound3.mp3", [[NSBundle mainBundle] resourcePath]]];
-
-    self.normalYo = [[AVAudioPlayer alloc] initWithContentsOfURL:normalSoundUrl error:nil];
-    self.softYo = [[AVAudioPlayer alloc] initWithContentsOfURL:softSoundUrl error:nil];
-    self.loudYo = [[AVAudioPlayer alloc] initWithContentsOfURL:loudSoundUrl error:nil];
-
-    [self.normalYo prepareToPlay];
-    [self.softYo prepareToPlay];
-    [self.loudYo prepareToPlay];
-
-
+    [self setupSounds];
 }
 
 - (void)didReceiveMemoryWarning
@@ -88,6 +75,20 @@
        [self.loudYo play];
     
 
+}
+
+- (void) setupSounds {
+    NSURL *normalSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/yoSound1.mp3", [[NSBundle mainBundle] resourcePath]]];
+    NSURL *softSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/yoSound2.mp3", [[NSBundle mainBundle] resourcePath]]];
+    NSURL *loudSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/yoSound3.mp3", [[NSBundle mainBundle] resourcePath]]];
+    
+    self.normalYo = [[AVAudioPlayer alloc] initWithContentsOfURL:normalSoundUrl error:nil];
+    self.softYo = [[AVAudioPlayer alloc] initWithContentsOfURL:softSoundUrl error:nil];
+    self.loudYo = [[AVAudioPlayer alloc] initWithContentsOfURL:loudSoundUrl error:nil];
+    
+    [self.normalYo prepareToPlay];
+    [self.softYo prepareToPlay];
+    [self.loudYo prepareToPlay];
 }
 
 @end

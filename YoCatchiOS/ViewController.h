@@ -27,4 +27,6 @@
 
 - (void)changeText;
 
+- (void) setupSounds;
+
 @end

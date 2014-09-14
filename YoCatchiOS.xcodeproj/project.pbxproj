@@ -21,6 +21,10 @@
 		B902334D19A356FF0090DAAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B902332F19A356FF0090DAAE /* UIKit.framework */; };
 		B902335519A356FF0090DAAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B902335319A356FF0090DAAE /* InfoPlist.strings */; };
 		B902335719A356FF0090DAAE /* YoCatchiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B902335619A356FF0090DAAE /* YoCatchiOSTests.m */; };
+		B91A7CDE19C5D7FF00E0554B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A7CDD19C5D7FF00E0554B /* AVFoundation.framework */; };
+		B95E369A19C5E221009E2467 /* yoSound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B95E369919C5E221009E2467 /* yoSound1.mp3 */; };
+		B95E369C19C5E4DC009E2467 /* yoSound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B95E369B19C5E4DC009E2467 /* yoSound2.mp3 */; };
+		B95E369E19C5E573009E2467 /* yoSound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B95E369D19C5E573009E2467 /* yoSound3.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		B902335219A356FF0090DAAE /* YoCatchiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YoCatchiOSTests-Info.plist"; sourceTree = "<group>"; };
 		B902335419A356FF0090DAAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B902335619A356FF0090DAAE /* YoCatchiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoCatchiOSTests.m; sourceTree = "<group>"; };
+		B91A7CDD19C5D7FF00E0554B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B95E369919C5E221009E2467 /* yoSound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yoSound1.mp3; path = "../../../Google Drive/Uni/342/yoSound1.mp3"; sourceTree = "<group>"; };
+		B95E369B19C5E4DC009E2467 /* yoSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yoSound2.mp3; path = "../../../Google Drive/Uni/342/yoSound2.mp3"; sourceTree = "<group>"; };
+		B95E369D19C5E573009E2467 /* yoSound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yoSound3.mp3; path = "../../../Google Drive/Uni/342/yoSound3.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91A7CDE19C5D7FF00E0554B /* AVFoundation.framework in Frameworks */,
 				B902332E19A356FF0090DAAE /* CoreGraphics.framework in Frameworks */,
 				B902333019A356FF0090DAAE /* UIKit.framework in Frameworks */,
 				B902332C19A356FF0090DAAE /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		B902332A19A356FF0090DAAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B91A7CDD19C5D7FF00E0554B /* AVFoundation.framework */,
 				B902332B19A356FF0090DAAE /* Foundation.framework */,
 				B902332D19A356FF0090DAAE /* CoreGraphics.framework */,
 				B902332F19A356FF0090DAAE /* UIKit.framework */,
@@ -112,6 +122,7 @@
 		B902333119A356FF0090DAAE /* YoCatchiOS */ = {
 			isa = PBXGroup;
 			children = (
+				B91A7CDF19C5D9F700E0554B /* Assets */,
 				B902333A19A356FF0090DAAE /* AppDelegate.h */,
 				B902333B19A356FF0090DAAE /* AppDelegate.m */,
 				B902333D19A356FF0090DAAE /* Main.storyboard */,
@@ -150,6 +161,16 @@
 				B902335319A356FF0090DAAE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B91A7CDF19C5D9F700E0554B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B95E369919C5E221009E2467 /* yoSound1.mp3 */,
+				B95E369B19C5E4DC009E2467 /* yoSound2.mp3 */,
+				B95E369D19C5E573009E2467 /* yoSound3.mp3 */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +249,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B95E369E19C5E573009E2467 /* yoSound3.mp3 in Resources */,
 				B902334419A356FF0090DAAE /* Images.xcassets in Resources */,
 				B902333619A356FF0090DAAE /* InfoPlist.strings in Resources */,
+				B95E369C19C5E4DC009E2467 /* yoSound2.mp3 in Resources */,
+				B95E369A19C5E221009E2467 /* yoSound1.mp3 in Resources */,
 				B902333F19A356FF0090DAAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +480,7 @@
 				B902335C19A356FF0090DAAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B902335D19A356FF0090DAAE /* Build configuration list for PBXNativeTarget "YoCatchiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +489,7 @@
 				B902335F19A356FF0090DAAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

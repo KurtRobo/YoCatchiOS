@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+//#import "YoCatchModel.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,20 @@
     
     self.yoField.delegate = self;
     self.catchField.delegate = self;
+    
+    NSURL *normalSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/yoSound1.mp3", [[NSBundle mainBundle] resourcePath]]];
+    NSURL *softSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/yoSound2.mp3", [[NSBundle mainBundle] resourcePath]]];
+    NSURL *loudSoundUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/yoSound3.mp3", [[NSBundle mainBundle] resourcePath]]];
+
+    self.normalYo = [[AVAudioPlayer alloc] initWithContentsOfURL:normalSoundUrl error:nil];
+    self.softYo = [[AVAudioPlayer alloc] initWithContentsOfURL:softSoundUrl error:nil];
+    self.loudYo = [[AVAudioPlayer alloc] initWithContentsOfURL:loudSoundUrl error:nil];
+
+    [self.normalYo prepareToPlay];
+    [self.softYo prepareToPlay];
+    [self.loudYo prepareToPlay];
+
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,6 +78,16 @@
     }];
     self.myLabel.textColor = textColor;
     self.myLabel.text = [NSString stringWithFormat: @"%@\n%@", [self.yoField text], [self.catchField text]];
+    
+    
+    if([[self.yoField text] isEqualToString:@"yo"])
+        [self.softYo play];
+    else if([[self.yoField text] isEqualToString:@"Yo"])
+        [self.normalYo play];
+    else if([[self.yoField text] isEqualToString:@"YO"])
+       [self.loudYo play];
+    
+
 }
 
 @end

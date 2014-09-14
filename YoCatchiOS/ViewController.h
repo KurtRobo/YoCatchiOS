@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface ViewController : UIViewController <UITextFieldDelegate>
+@interface ViewController : UIViewController <UITextFieldDelegate> 
 
 @property (weak, nonatomic) IBOutlet UITextField *yoField;
+
+@property (strong, nonatomic) AVAudioPlayer *normalYo;
+
+@property (strong, nonatomic) AVAudioPlayer *softYo;
+
+@property (strong, nonatomic) AVAudioPlayer *loudYo;
 
 @property (weak, nonatomic) IBOutlet UITextField *catchField;
 

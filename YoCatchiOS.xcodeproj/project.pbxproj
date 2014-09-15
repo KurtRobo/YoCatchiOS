@@ -25,6 +25,7 @@
 		B95E369A19C5E221009E2467 /* yoSound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B95E369919C5E221009E2467 /* yoSound1.mp3 */; };
 		B95E369C19C5E4DC009E2467 /* yoSound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B95E369B19C5E4DC009E2467 /* yoSound2.mp3 */; };
 		B95E369E19C5E573009E2467 /* yoSound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B95E369D19C5E573009E2467 /* yoSound3.mp3 */; };
+		B9E45A1919C6C64400439F13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9E45A1B19C6C64400439F13 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,9 @@
 		B95E369919C5E221009E2467 /* yoSound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yoSound1.mp3; path = "../../../Google Drive/Uni/342/yoSound1.mp3"; sourceTree = "<group>"; };
 		B95E369B19C5E4DC009E2467 /* yoSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yoSound2.mp3; path = "../../../Google Drive/Uni/342/yoSound2.mp3"; sourceTree = "<group>"; };
 		B95E369D19C5E573009E2467 /* yoSound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yoSound3.mp3; path = "../../../Google Drive/Uni/342/yoSound3.mp3"; sourceTree = "<group>"; };
+		B9E45A1C19C6C64D00439F13 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B9E45A1D19C6C65400439F13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B9E45A1E19C6CA5900439F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 				B902333419A356FF0090DAAE /* InfoPlist.strings */,
 				B902333719A356FF0090DAAE /* main.m */,
 				B902333919A356FF0090DAAE /* YoCatchiOS-Prefix.pch */,
+				B9E45A1B19C6C64400439F13 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
 			);
 			mainGroup = B902331F19A356FF0090DAAE;
 			productRefGroup = B902332919A356FF0090DAAE /* Products */;
@@ -252,6 +258,7 @@
 				B95E369E19C5E573009E2467 /* yoSound3.mp3 in Resources */,
 				B902334419A356FF0090DAAE /* Images.xcassets in Resources */,
 				B902333619A356FF0090DAAE /* InfoPlist.strings in Resources */,
+				B9E45A1919C6C64400439F13 /* Localizable.strings in Resources */,
 				B95E369C19C5E4DC009E2467 /* yoSound2.mp3 in Resources */,
 				B95E369A19C5E221009E2467 /* yoSound1.mp3 in Resources */,
 				B902333F19A356FF0090DAAE /* Main.storyboard in Resources */,
@@ -320,6 +327,16 @@
 				B902335419A356FF0090DAAE /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B9E45A1B19C6C64400439F13 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9E45A1C19C6C64D00439F13 /* it */,
+				B9E45A1D19C6C65400439F13 /* en */,
+				B9E45A1E19C6CA5900439F13 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

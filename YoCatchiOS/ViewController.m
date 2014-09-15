@@ -66,6 +66,7 @@
     self.myLabel.textColor = textColor;
     self.myLabel.text = [NSString stringWithFormat: @"%@\n%@", [self.yoField text], [self.catchField text]];
     
+    NSLocalizedString *localString = NSLocalizedString(@"Yo", @"Basic yo");
     
     if([[self.yoField text] isEqualToString:@"yo"])
         [self.softYo play];

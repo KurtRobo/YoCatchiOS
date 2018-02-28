@@ -32,6 +32,7 @@
 
 //Calls function when show message button pressed
 - (IBAction)showMessageButton:(id)sender {
+    
     [self changeText];
 }
 
@@ -63,11 +64,14 @@
     [UIView animateWithDuration:0.5 animations:^{
         self.view.backgroundColor = backgroundColour;
     }];
+
+    //String Localisation
+    NSString *localisedYo = NSLocalizedString([self.yoField text], nil);
+    NSString *localisedCatch = NSLocalizedString([self.catchField text], nil);
+
     self.myLabel.textColor = textColor;
-    self.myLabel.text = [NSString stringWithFormat: @"%@\n%@", [self.yoField text], [self.catchField text]];
-    
-    NSLocalizedString *localString = NSLocalizedString(@"Yo", @"Basic yo");
-    
+    self.myLabel.text = [NSString stringWithFormat: @"%@\n%@", localisedYo, localisedCatch];
+
     if([[self.yoField text] isEqualToString:@"yo"])
         [self.softYo play];
     else if([[self.yoField text] isEqualToString:@"Yo"])

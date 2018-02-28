@@ -49,7 +49,6 @@
 		B902333919A356FF0090DAAE /* YoCatchiOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YoCatchiOS-Prefix.pch"; sourceTree = "<group>"; };
 		B902333A19A356FF0090DAAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B902333B19A356FF0090DAAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B902333E19A356FF0090DAAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B902334019A356FF0090DAAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B902334119A356FF0090DAAE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B902334319A356FF0090DAAE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -62,6 +61,8 @@
 		B95E369919C5E221009E2467 /* yoSound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yoSound1.mp3; path = "../../../Google Drive/Uni/342/yoSound1.mp3"; sourceTree = "<group>"; };
 		B95E369B19C5E4DC009E2467 /* yoSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yoSound2.mp3; path = "../../../Google Drive/Uni/342/yoSound2.mp3"; sourceTree = "<group>"; };
 		B95E369D19C5E573009E2467 /* yoSound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yoSound3.mp3; path = "../../../Google Drive/Uni/342/yoSound3.mp3"; sourceTree = "<group>"; };
+		B971342219CF320700447DCD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B971342319CF320700447DCD /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = it.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9E45A1C19C6C64D00439F13 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B9E45A1D19C6C65400439F13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B9E45A1E19C6CA5900439F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -316,7 +317,8 @@
 		B902333D19A356FF0090DAAE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B902333E19A356FF0090DAAE /* Base */,
+				B971342219CF320700447DCD /* en */,
+				B971342319CF320700447DCD /* it */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
